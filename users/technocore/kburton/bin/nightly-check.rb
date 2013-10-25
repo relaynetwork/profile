@@ -6,10 +6,9 @@ require 'fileutils'
 
 class GitCheck < BaseApp
 
-  def project_is_clean? name, path
+  def check_project name, path
     Dir.chdir path
-    status = `git status`.split("\n").last
-    status.include?("nothing to commit") && status.include?("working directory clean")
+    diff = `bash -c 'diff <(git status) ~/.clean-git-status.output;'`
   end
 
   def command_line_arguments
@@ -57,12 +56,13 @@ END_OF_MESSAGE
         project_name = git_config_file.split('/')[-3]
         puts "  yep: #{project_name}"
         path = "#{ENV['HOME']}/projects/#{project_name}"
-        unless project_is_clean? project_name, path
+        diff = check_project(project_name,path)
+        unless diff.empty?
           changed_projs << project_name
           subj = "There are unchecked in changes on #{hostname} in #{project_name}"
           msg = <<-MSG
         There are unchecked in changes in #{project_name} on #{hostname}:
-          #{`git status`}
+          #{diff}
           MSG
           if self.send_mail
             send_email "eng@relaynetwork.com", "eng@relaynetwork.com", subj, msg
