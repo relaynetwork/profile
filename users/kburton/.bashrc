@@ -12,7 +12,7 @@ export JAVA_HOME="/usr/lib/jvm/java-7-openjdk"
 
 export PATH="$JAVA_HOME/bin:$PATH"
 
-export RUBYLIB="$RUBYLIB:$HOME/projects/rn-extutils/relay-gems/lib"
+export RUBYLIB="$HOME/projects/rn-rubylibs/relay-gems/lib:$RUBYLIB"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
