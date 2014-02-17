@@ -31,5 +31,3 @@
         lg = log -p
         cfg = config --global
         cim = commit -m
-[push]
-	default = simple
