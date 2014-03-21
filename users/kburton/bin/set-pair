@@ -25,6 +25,34 @@ class SetPair < BaseApp
         f.puts line
       end
     end
+
+    if pair_name =~ /josh/i
+      $stderr.puts "I _SURE_ LIKE IRISH SPRING!"
+    end
+
+    if pair_name =~ /kyle/i
+      $stderr.puts "ba ba ba ba boom!"
+    end
+
+    if pair_name =~ /pat/i
+      $stderr.puts "WHY HELL'O THERE MR MCPATY!"
+    end
+
+    if pair_name =~ /linus/i
+      $stderr.puts "NOOO, REALLY?"
+    end
+
+    if pair_name =~ /nick/i
+      $stderr.puts "HAZ YOU A MONEY? I CAN HAZ MILKSHAKEZ?"
+    end
+
+    if pair_name =~ /paul/i
+      $stderr.puts "YUM YUM CHOCOLATE FRIDAY!"
+    end
+
+    if pair_name =~ /rich/i
+      $stderr.puts "I _SURE_ DO LIKE DRIVING!"
+    end
   end
 end
 
