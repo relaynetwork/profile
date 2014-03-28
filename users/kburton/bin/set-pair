@@ -35,7 +35,7 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /pat/i
-      $stderr.puts "WHY HELL'O THERE MR MCPATY!"
+      $stderr.puts "I love my girlfriend so much"
     end
 
     if pair_name =~ /linus/i
@@ -51,7 +51,7 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /rich/i
-      $stderr.puts "I _SURE_ DO LIKE DRIVING!"
+      $stderr.puts "Minecraft 4 life"
     end
   end
 end
