@@ -43,7 +43,7 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /nick/i
-      $stderr.puts "HAZ YOU A MONEY? I CAN HAZ MILKSHAKEZ?"
+      $stderr.puts "I HAVE CORN"
     end
 
     if pair_name =~ /paul/i
@@ -51,7 +51,7 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /rich/i
-      $stderr.puts "Minecraft 4 life"
+      $stderr.puts "If Minecraft had dinosaurs I would be soooo happy"
     end
   end
 end
