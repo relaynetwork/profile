@@ -43,7 +43,7 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /nick/i
-      $stderr.puts "I HAVE CORN"
+      $stderr.puts "PBR for life!"
     end
 
     if pair_name =~ /paul/i
