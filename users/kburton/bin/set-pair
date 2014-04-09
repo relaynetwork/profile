@@ -35,7 +35,7 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /pat/i
-      $stderr.puts "I love my girlfriend so much"
+      $stderr.puts "Is that a challenge?"
     end
 
     if pair_name =~ /linus/i
