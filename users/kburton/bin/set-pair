@@ -39,11 +39,11 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /linus/i
-      $stderr.puts "NOOO, REALLY?"
+      $stderr.puts "I blame my pong loses on injuries"
     end
 
     if pair_name =~ /nick/i
-      $stderr.puts "Hummus, or peanut butter. That is the question."
+      $stderr.puts "My farm share is a utopic paradise"
     end
 
     if pair_name =~ /paul/i
@@ -51,7 +51,8 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /rich/i
-      $stderr.puts "If Minecraft had dinosaurs I would be soooo happy"
+      #$stderr.puts "If Minecraft had dinosaurs I would be soooo happy"
+      $stderr.puts "Shall I Disable or Enable the demugger?"
     end
   end
 end
