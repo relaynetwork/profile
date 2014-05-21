@@ -31,7 +31,10 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /kyle/i
-      $stderr.puts "ba ba ba ba boom!"
+      $stderr.puts [
+        "ba ba ba ba boom!",
+        "What's my model?"
+      ].sample
     end
 
     if pair_name =~ /pat/i
@@ -47,7 +50,10 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /paul/i
-      $stderr.puts "YUM YUM CHOCOLATE FRIDAY!"
+      $stderr.puts [
+        "YUM YUM CHOCOLATE FRIDAY!", 
+        "I _could_ take that kangaroo (https://www.youtube.com/watch?v=36tBS6dXo-U)"
+      ].sample
     end
 
     if pair_name =~ /rich/i
