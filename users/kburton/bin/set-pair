@@ -57,6 +57,13 @@ class SetPair < BaseApp
       ].sample
     end
 
+    if pair_name =~ /chris/i
+      $stderr.puts [
+        "not off the top of my head",
+        "walked right into that one I guess"
+      ].sample
+    end
+
     if pair_name =~ /rich/i
       #$stderr.puts "If Minecraft had dinosaurs I would be soooo happy"
       $stderr.puts "Shall I Disable or Enable the demugger?"
