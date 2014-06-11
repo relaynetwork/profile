@@ -27,22 +27,33 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /josh/i
-      $stderr.puts "I _SURE_ LIKE IRISH SPRING!"
+      $stderr.puts [
+        "I _SURE_ LIKE IRISH SPRING!",
+        "Jimmy John's? Nah man, Jimmy Jonga's."
+      ]
     end
 
     if pair_name =~ /kyle/i
       $stderr.puts [
         "ba ba ba ba boom!",
-        "What's my model?"
+        "What's my model?",
+        "I, Kyle Burton, do hereby humbly promise to feed my team members lamburger."
       ].sample
     end
 
     if pair_name =~ /pat/i
-      $stderr.puts ["Is that a challenge?", "Sweet, but with a weird aftertaste"].sample
+      $stderr.puts [
+        "Is that a challenge?",
+        "Sweet, but with a weird aftertaste"
+      ].sample
     end
 
     if pair_name =~ /linus/i
-      $stderr.puts "I blame my pong loses on injuries"
+      $stderr.puts [
+        "I blame my pong losses on injuries",
+        "Can I have a pair? Please?",
+        "Look Charlie Brown, you have fears and you have frustrations, am I right? Of course I’m right! So what you need is a blanket like this to soak up those fears and frustrations!"
+      ]
     end
 
     if pair_name =~ /nick/i
@@ -65,8 +76,10 @@ class SetPair < BaseApp
     end
 
     if pair_name =~ /rich/i
-      #$stderr.puts "If Minecraft had dinosaurs I would be soooo happy"
-      $stderr.puts "Shall I Disable or Enable the demugger?"
+      $stderr.puts [
+        "If Minecraft had dinosaurs I would be soooo happy",
+        "Shall I Disable or Enable the demugger?"
+      ].sample
     end
   end
 end
