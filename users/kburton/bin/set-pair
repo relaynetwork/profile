@@ -53,7 +53,7 @@ class SetPair < BaseApp
         "I blame my pong losses on injuries",
         "Can I have a pair? Please?",
         "Look Charlie Brown, you have fears and you have frustrations, am I right? Of course I'm right! So what you need is a blanket like this to soak up those fears and frustrations!"
-      ]
+      ].sample
     end
 
     if pair_name =~ /nick/i
