@@ -37,6 +37,7 @@ class SetPair < BaseApp
       $stderr.puts [
         "ba ba ba ba boom!",
         "What's my model?",
+        "Did we forget Chris?",
         "I, Kyle Burton, do hereby humbly promise to feed my team members lamburger."
       ].sample
     end
