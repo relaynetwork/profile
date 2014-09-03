@@ -25,7 +25,7 @@
         lg = log -p
         spull = !git-svn fetch && git-svn rebase --local
         spush = !git-svn dcommit
-        pob = !bash -l -c "'. ~/.bashrc; git pull --rebase origin $(__git_ps1 \"%s\")'"
+        pob = !bash -l -c "'. ~/.bashrc; git pull --rebase origin $(__git_ps1 \"%s\")' && echo 'Fetching tags...' && git fetch --tags"
         pub   = !bash -l -c "'. ~/.bashrc; git push origin $(__git_ps1 \"%s\")' && echo 'Pushing tags...' && git push --tags"
         repub = !git pob && git pub
         lg = log -p
