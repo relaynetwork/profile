@@ -35,6 +35,7 @@ class SetPair < BaseApp
 
     if pair_name =~ /kyle/i
       $stderr.puts [
+        "Do you like tubes of balls?",
         "ba ba ba ba boom!",
         "What's my model?",
         "Did we forget Chris?",
@@ -53,6 +54,7 @@ class SetPair < BaseApp
       $stderr.puts [
         "I blame my pong losses on injuries",
         "Can I have a pair? Please?",
+        "Fast 'n bulbous!",
         "Look Charlie Brown, you have fears and you have frustrations, am I right? Of course I'm right! So what you need is a blanket like this to soak up those fears and frustrations!"
       ].sample
     end
@@ -79,8 +81,10 @@ class SetPair < BaseApp
       ].sample
     end
 
-    if pair_name =~ /rich/i
+    if pair_name =~ /rich/i or pair_name =~ /mugge/
       $stderr.puts [
+        "Hawt soss.",
+        "Underwater, it doesn't matter.",
         "If Minecraft had dinosaurs I would be soooo happy",
         "Shall I Disable or Enable the demugger?"
       ].sample
