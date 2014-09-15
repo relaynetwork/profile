@@ -76,6 +76,7 @@ class SetPair < BaseApp
 
     if pair_name =~ /chris/i
       $stderr.puts [
+        "That's right, the mascara snake.",
         "not off the top of my head",
         "walked right into that one I guess"
       ].sample
@@ -83,6 +84,7 @@ class SetPair < BaseApp
 
     if pair_name =~ /rich/i or pair_name =~ /mugge/
       $stderr.puts [
+        "Also, a tin teardrop.",
         "Hawt soss.",
         "Underwater, it doesn't matter.",
         "If Minecraft had dinosaurs I would be soooo happy",
