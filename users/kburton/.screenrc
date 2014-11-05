@@ -6,8 +6,8 @@ screen -t admin     # 2
 screen -t services  # 3
 screen -t top       # 4
 screen -t services2 # 5
-screen -t misc      # 6
-screen -t misc2     # 7
+screen -t dbshell   # 6
+screen -t misc      # 7
 #screen -t remote    # 8
 #screen -t remote2   # 9
 select 0
