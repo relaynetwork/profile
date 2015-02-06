@@ -1,6 +1,6 @@
 [user]
   email = kburton@relaynetwork.com
-  name = Paul and Pat
+	name = Josh
 
 [core]
   excludesfile = /home/kburton/.gitignore

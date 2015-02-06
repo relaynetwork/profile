@@ -46,6 +46,8 @@ class SetPair < BaseApp
     if pair_name =~ /pat/i
       $stderr.puts [
         "Is that a challenge?",
+        "Fast and Bulbous.",
+        "Hawt soss.",
         "Sweet, but with a weird aftertaste"
       ].sample
     end
@@ -84,8 +86,6 @@ class SetPair < BaseApp
 
     if pair_name =~ /rich/i or pair_name =~ /mugge/
       $stderr.puts [
-        "Also, a tin teardrop.",
-        "Hawt soss.",
         "Underwater, it doesn't matter.",
         "If Minecraft had dinosaurs I would be soooo happy",
         "Shall I Disable or Enable the demugger?"
