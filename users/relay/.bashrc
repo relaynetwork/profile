@@ -15,3 +15,5 @@ export RUBYLIB="$RUBYLIB:$HOME/projects/rn-extutils/relay-gems/lib"
 export PATH="$PATH:/opt/node/bin:$HOME/node_modules/.bin"
 
 export PATH="$PATH:/opt/zookeeper/bin"
+
+alias awsd="aws --profile=dev $@"
