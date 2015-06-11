@@ -48,7 +48,8 @@ class SetPair < BaseApp
         "Is that a challenge?",
         "Fast and Bulbous.",
         "Hawt soss.",
-        "Sweet, but with a weird aftertaste"
+        "Wanna see a picture of my cat?",
+        "Meow!"
       ].sample
     end
 
@@ -88,7 +89,8 @@ class SetPair < BaseApp
       $stderr.puts [
         "Underwater, it doesn't matter.",
         "If Minecraft had dinosaurs I would be soooo happy",
-        "Shall I Disable or Enable the demugger?"
+        "Shall I Disable or Enable the demugger?",
+        "It is I, the API guy."
       ].sample
     end
   end
