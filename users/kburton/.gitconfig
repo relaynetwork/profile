@@ -1,33 +1,37 @@
 [user]
   email = kburton@relaynetwork.com
-	name = Pat and Kyle
+	name = Josh
 
 [core]
-        excludesfile = /home/kburton/.gitignore
+  excludesfile = /home/kburton/.gitignore
 
 [color]
-        ui = auto
-        diff = auto
-        status = auto
-        interactive = auto
+  ui = auto
+  diff = auto
+  status = auto
+  interactive = auto
 [alias]
-        st = status
-        au = add -u
-        pt = add --patch
-        ci = commit -v
-        cia = commit -am
-        br = branch
-        co = checkout
-        df = diff
-        dfc = diff --cached
-        dfcw = diff --color-words
-        dfccw = diff --cached --color-words
-        lg = log -p
-        spull = !git-svn fetch && git-svn rebase --local
-        spush = !git-svn dcommit
-        pob = !bash -l -c "'. ~/.bashrc; git pull --rebase origin $(__git_ps1 \"%s\")' && echo 'Fetching tags...' && git fetch --tags"
-        pub   = !bash -l -c "'. ~/.bashrc; git push origin $(__git_ps1 \"%s\")' && echo 'Pushing tags...' && git push --tags"
-        repub = !git pob && git pub
-        lg = log -p
-        cfg = config --global
-        cim = commit -m
+  untrack = update-index --assume-unchanged
+  st      = status
+  lgo     = log
+  au      = add -u
+  pt      = add --patch
+  ci      = commit -v
+  cia     = commit -am
+  br      = branch
+  co      = checkout
+  df      = diff
+  dfc     = diff --cached
+  dfcw    = diff --color-words
+  dfccw   = diff --cached --color-words
+  lg      = log -p
+  spull   = !git-svn fetch && git-svn rebase --local
+  spush   = !git-svn dcommit
+  pob     = !bash -l -c "'. ~/.bashrc; git pull --rebase origin $(__git_ps1 \"%s\")' && echo 'Fetching tags...' && git fetch --tags"
+  pub     = !bash -l -c "'. ~/.bashrc; git push origin $(__git_ps1 \"%s\")' && echo 'Pushing tags...' && git push --tags"
+  repub   = !git pob && git pub
+  lg      = log -p
+  cfg     = config --global
+  cim     = commit -m
+[push]
+	default = current

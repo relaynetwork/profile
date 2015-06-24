@@ -11,6 +11,7 @@
         interactive = auto
 [alias]
         st = status
+        stu = ls-files --others --exclude-standard
         au = add -u
         pt = add --patch
         ci = commit -v
@@ -30,3 +31,4 @@
         lg = log -p
         cfg = config --global
         cim = commit -m
+        l = log --pretty=format:'%C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset'
