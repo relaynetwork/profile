@@ -24,13 +24,12 @@
   dfc     = diff --cached
   dfcw    = diff --color-words
   dfccw   = diff --cached --color-words
-  lg      = log -p
   spull   = !git-svn fetch && git-svn rebase --local
   spush   = !git-svn dcommit
   pob     = !bash -l -c "'. ~/.bashrc; git pull --rebase origin $(__git_ps1 \"%s\")' && echo 'Fetching tags...' && git fetch --tags"
   pub     = !bash -l -c "'. ~/.bashrc; git push origin $(__git_ps1 \"%s\")' && echo 'Pushing tags...' && git push --tags"
   repub   = !git pob && git pub
-  lg      = log -p
+  lg      = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   cfg     = config --global
   cim     = commit -m
 [push]
