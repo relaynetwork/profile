@@ -10,6 +10,9 @@ alias sl='ls'
 . $HOME/.profile.d/users/kburton/kyle.burton.conf
 
 export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
+if [ -d "/usr/lib/jvm/java-7-oracle/" ]; then
+  export JAVA_HOME="/usr/lib/jvm/java-7-oracle/"
+fi
 
 export PATH="$JAVA_HOME/bin:$PATH"
 
@@ -28,8 +31,16 @@ alias phantomjs='/home/relay/projects/transition.js/software/phantomjs-1.8.1-lin
 
 
 
-export PATH="$PATH:/opt/node/bin:$HOME/node_modules/.bin"
+if [ -d "$HOME/local/node/bin" ]; then
+  export PATH="$PATH:$HOME/local/node/bin"
+elif [ -d "$HOME/node_modules/.bin" ]; then
+  export PATH="$PATH:$HOME/node_modules/.bin"
+elif [ -d "/opt/node/bin" ]; then
+  export PATH="$PATH:/opt/node/bin"
+fi
+
 alias emacs="TERM='xterm-256color' emacs -nw"
 
+alias awsd="aws --profile=dev $@"
 
 test -e /home/relay/projects/dev-utils/instago/go.env && source /home/relay/projects/dev-utils/instago/go.env
