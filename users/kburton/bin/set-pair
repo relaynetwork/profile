@@ -93,6 +93,12 @@ class SetPair < BaseApp
         "It is I, the API guy."
       ].sample
     end
+
+    if pair_name =~ /rose/i or pair_name =~ /harrison/
+      $stderr.puts [
+        "My power, my pleasure, my pain!"
+      ].sample
+    end
   end
 end
 
