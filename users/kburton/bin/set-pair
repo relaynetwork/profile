@@ -85,12 +85,13 @@ class SetPair < BaseApp
       ].sample
     end
 
-    if pair_name =~ /rich/i or pair_name =~ /mugge/
+    if pair_name =~ /rich/i or pair_name =~ /mugge/i
       $stderr.puts [
         "Underwater, it doesn't matter.",
         "If Minecraft had dinosaurs I would be soooo happy",
         "Shall I Disable or Enable the demugger?",
-        "It is I, the API guy."
+        "It is I, the API guy.",
+        "Ruff Rhydurrs for life!"
       ].sample
     end
 
