@@ -9,10 +9,10 @@ alias sl='ls'
 
 . $HOME/.profile.d/users/kburton/kyle.burton.conf
 
-export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
-if [ -d "/usr/lib/jvm/java-7-oracle/" ]; then
-  export JAVA_HOME="/usr/lib/jvm/java-7-oracle/"
-fi
+#export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
+#if [ -d "/usr/lib/jvm/java-7-oracle/" ]; then
+#  export JAVA_HOME="/usr/lib/jvm/java-7-oracle/"
+#fi
 
 export PATH="$JAVA_HOME/bin:$PATH"
 
@@ -44,3 +44,5 @@ alias emacs="TERM='xterm-256color' emacs -nw"
 alias awsd="aws --profile=dev $@"
 
 test -e /home/relay/projects/dev-utils/instago/go.env && source /home/relay/projects/dev-utils/instago/go.env
+
+test -f $HOME/bin/bake-completion.sh && . $HOME/bin/bake-completion.sh
