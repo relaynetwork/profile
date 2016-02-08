@@ -33,3 +33,6 @@ set backup
 " Set Swap directory
 set directory=~/.vim/backup/swap
 
+"custom commands
+
+command W w
