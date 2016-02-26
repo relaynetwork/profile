@@ -91,7 +91,6 @@ class SetPair < BaseApp
         "If Minecraft had dinosaurs I would be soooo happy",
         "Shall I Disable or Enable the demugger?",
         "It is I, the API guy.",
-        "Ruff Rhydurrs for life!"
       ].sample
     end
 
