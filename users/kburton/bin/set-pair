@@ -105,6 +105,12 @@ class SetPair < BaseApp
         "Fear my shorts and tiny keyboard!"
       ].sample
     end
+
+    if pair_name =~ /jeremy/i or pair_name =~ /frenchie/i
+      $stderr.puts [
+        "Je ne parle pas Anglais."
+      ].sample
+    end
   end
 end
 
