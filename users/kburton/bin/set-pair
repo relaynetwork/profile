@@ -108,6 +108,7 @@ class SetPair < BaseApp
 
     if pair_name =~ /jeremy/i or pair_name =~ /frenchie/i
       $stderr.puts [
+        "Hey, listen.",
         "Je ne parle pas Anglais."
       ].sample
     end
