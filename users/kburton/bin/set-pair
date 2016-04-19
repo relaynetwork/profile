@@ -49,7 +49,8 @@ class SetPair < BaseApp
         "Fast and Bulbous.",
         "Hawt soss.",
         "Wanna see a picture of my cat?",
-        "Meow!"
+        "Meow!",
+        "M      M      M      M\n E      E      E      E\n  O      O      O      O\n   W      W      W      W"
       ].sample
     end
 
