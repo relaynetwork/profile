@@ -113,6 +113,12 @@ class SetPair < BaseApp
         "Je ne parle pas Anglais."
       ].sample
     end
+
+    if pair_name =~ /brian/i or pair_name =~ /bean/i or pair_name =~ /spiderman/i
+      $stderr.puts [
+        "My Spidey Senses are tingling!"
+      ].sample
+    end
   end
 end
 
