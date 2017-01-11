@@ -36,3 +36,6 @@ set directory=~/.vim/backup/swap
 "custom commands
 
 command W w
+
+"Brian likes to escape with fd
+:imap fd <Esc>
