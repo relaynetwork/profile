@@ -119,6 +119,12 @@ class SetPair < BaseApp
         "My Spidey Senses are tingling!"
       ].sample
     end
+
+    if pair_name =~ /tj/i or pair_name =~ /teej/i or pair_name =~ /tjay/i
+      $stderr.puts [
+        "What about Datomic?"
+      ].sample
+    end
   end
 end
 
