@@ -49,4 +49,4 @@ test -f $HOME/bin/bake-completion.sh && . $HOME/bin/bake-completion.sh
 
 # tty intercepts ctrl-s for some questionable reason, so readline can't use it to search forward. This fixes that
 # http://vaab.blog.kal.fr/2010/11/11/enabling-ctrl-s-for-forward-history-search-in-bash/
-stty stop ''
+[[ $- == *i* ]] && stty -ixon
