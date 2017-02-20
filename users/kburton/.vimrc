@@ -38,4 +38,7 @@ set directory=~/.vim/backup/swap
 command W w
 
 "Brian likes to escape with fd
-:imap fd <Esc>
+"But Brian realized that ssh keys and api keys and pod rids and all sorts of
+"randomly generated stuff occasionally has 'fd' in it, so he's just gonna act
+"like this never happened...(shhhhhhh)
+":imap fd <Esc>
